@@ -1,0 +1,632 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.hamburger{
+    display: block;
+    background: #000;
+    width: 30px;
+    height: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.hamburger:before, .hamburger:after{
+    background: #000;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    transition: .2s;
+}
+
+
+.hamburger:before{
+    top: -10px;
+}
+
+
+.hamburger:after{
+    bottom: -10px;
+}
+
+
+header input{
+    display: none;
+}
+
+
+input:checked ~ label .hamburger{
+    transform: rotate(45deg);
+    position: fixed;
+    right: 17px;
+}
+
+
+input:checked ~ label .hamburger:before{
+    transform: rotate(90deg);
+    top: 0px;
+}
+
+
+input:checked ~ label .hamburger:after{
+    transform: rotate(90deg);
+    bottom: 0px;
+}
+
+
+header{
+    background-color: #c2f0c2;
+}
+
+
+header h1{
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    font-family: Open Sans;
+    padding: 15px;
+}
+
+
+header label{
+    float: right;
+    margin: -35px 20px 0 0;
+}
+
+
+header nav{
+   width: 0;
+   height: 100vh;
+   transition: .2s;
+   position: fixed;
+   overflow: hidden;
+   background-color: #c2f0c2;
+   z-index: 1;
+   margin-top: -80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+input:checked ~ nav{
+    width: 100%;
+}
+
+
+header nav ul{
+    text-align: center;
+    margin-top: -80px;
+}
+
+
+header nav ul li{
+    padding-top: 20px;
+}
+
+
+header nav ul li a{
+    color: #000;
+    font-size: 30px;
+    font-family: ROBOTO;
+}
+
+
+main{
+    background-color: #c2f0c2;
+    padding-bottom: 50px;
+}
+
+
+main .banner{
+    width:100%;
+    height: 60vh;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30px;
+}
+
+
+main .banner-inicio{
+    background-image: url("/res1.jfif");
+}
+
+
+main .title{
+    padding: 50px 25px 0 25px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #8D6100;
+    font-weight: normal;
+}
+
+
+main .organizar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .organizar div{
+    text-align: center;
+    width: 85%;
+    margin: 0 auto 0 auto;
+}
+
+main .organizar div h1{
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 40px;
+    font-family: ROBOTO;
+}
+
+
+main .organizar div p{
+    padding-top: 20px;
+    line-height: 29px;
+    font-family: Raleway;
+    padding-bottom: 40px;
+}
+
+
+main .organizar div span{
+    background-color: #8D6100;
+    padding: 15px;
+}
+
+
+main .organizar div span a{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+main .organizar img{
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+
+main .reservas h1{
+    letter-spacing: 6px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    max-width: 80%;
+    font-weight: normal;
+    margin: 0 auto 0 auto;
+    margin-top: 40px;
+    font-family: ROBOTO;
+}
+
+
+main .reservas form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main .reservas form select{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    background-color: #c2f0c2;
+    font-size: 17px;
+}
+
+
+main .reservas form input{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    width: 100%;
+    background-color: #c2f0c2;
+    font-size: 17px;
+}
+
+
+main .reservas form .enviar{
+    background-color: #8D6100;
+    border: none;
+    color: #fff;
+}
+
+
+
+footer{
+    background-color: #888844;
+    width: 100%;
+}
+
+
+
+footer .icons{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
+footer .icons a{
+    color: #fff;
+    font-size: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+footer .address div div h1{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: ROBOTO;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+
+footer .address p{
+    color:#fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+
+footer .address hr{
+    width: 250px;
+    margin: 0 auto 0 auto;
+}
+
+
+footer .address #copyright{
+    padding-top: 30px;
+}
+
+
+footer .address #langs{
+    padding-bottom: 10px;
+}
+
+
+
+/* Página Menu */
+.sub-title{
+    padding: 20px 25px 0 25px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #8D6100;
+    font-weight: normal;
+}
+
+
+main .banner-menu{
+    background-image: url("/me1.jpg");
+}
+
+
+main .categories{
+    width: 90%;
+    margin: 50px auto 0 auto;
+}
+
+
+main .categories a{
+    color: #fff;
+    font-size: 25px;
+}
+
+
+main .categories div{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    background-position: center;
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+main .categories a div.category0{
+    background-image: url("/res2.jfif");
+}
+
+
+main .categories a div.category1{
+    background-image: url("/ni1.jpg");
+}
+main .categories a div.category6{
+    background-image: url("/de1.jfif");
+}
+
+
+
+
+
+main .categories a div.category3{
+    background-image: url("/si1.jpg");
+}
+
+
+
+/* Page Contact */
+main .banner-contact{
+    background-image: url("/res1.jfif");
+}
+
+
+main #contact{
+    padding-top: 45px;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+}
+
+
+main #contact input{
+    background-color: #FFFFE0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+
+
+main #contact textarea{
+    background-color: #c2f0c2;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+}
+
+
+main #contact .enviar{
+    border: none;
+    color: #fff;
+    background-color: #8D6100;
+    font-size: 15px;
+}
+
+
+/* Sub pages */
+main .drinks-banner{
+    background-image: url("/ni1.jpg");
+}
+
+
+main .desserts-banner{
+    background-image: url("/de1.jfif");
+}
+
+
+main .meats-banner{
+    background-image: url("/si1.jpg");
+}
+
+
+main .fishes-banner{
+    background-image: url("/res2.jfif");
+}
+
+
+
+
+
+
+main .borders{
+    width: 90%;
+    margin: 40px auto 0 auto;
+    border: 1px solid #000;
+}
+
+
+main .borders article{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+
+
+main .borders article p{
+    width: 80%;
+}
+
+
+main .borders article span{
+    width: 20%;
+    text-align: right;
+}
+
+
+
+/* Versão pra PC */
+@media (min-width: 1000px){
+
+	header .hamburger{
+        display: none;
+    }
+    
+
+    header nav{
+       width: 100%;
+       height: 80px;
+       background-color: #c2f0c2;
+       position: static;
+       margin-top: -80px;
+       align-items: flex-end;
+    }
+
+
+    header nav ul{
+       width: 100%;
+       height: 80px;
+       display: flex;
+       flex-direction: row;
+       align-items: flex-end;
+       justify-content: flex-end;
+       padding: 18px 17px 18px 0;
+    }
+
+    
+    header nav ul li a{
+        padding: 8px;
+    }
+
+
+    main{
+        padding-bottom: 90px;
+    }
+
+
+    main .banner{
+        height: 85vh;
+    }
+
+
+    main .title{
+        padding: 80px 0 0 0;
+        font-size: 35px;
+    }
+
+    .sub-title{
+        font-size: 25px;
+    }
+
+
+    main .organizar{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 25px;
+        margin: 0 auto 0 auto;
+    }
+    
+
+    main .organizar div{
+        width: 50%;
+    }
+
+
+    main .organizar div h1{
+        font-size: 35px;
+    }
+
+
+    main .organizar img{
+        min-width: 40%;
+        padding-right: 8px;
+    }
+
+
+    footer .icons a{
+        font-size: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    
+
+    footer  .address .all{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    footer  .address .all div{
+        padding: 25px;
+    }
+
+
+    footer .address hr{
+        width: 50%;
+    }
+
+
+    /* Página Menu */
+    main .categories div{
+        margin: 0 auto 0 auto;
+        width: 60%;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+
+    main .categories a{
+        font-size: 40px;
+    }
+
+
+    /* Sub pages */
+    main .borders{
+        width: 60%;
+    }
+
+
+    main .borders article{
+        padding: 25px;
+    }
+
+}
+/* Fim */
+
+
+
+
+/* Versão mobile horizontal */
+@media (orientation:landscape){
+    main .banner{
+        height: 100vh;
+    }
+}
+
+
+
+@media (min-width: 400px){
+    main .organizar img{
+        width: 350px;
+    }
+}
+
+
+@media (min-width: 880px){
+    main .reservas form{
+        width: 60%;
+    }
+
+    /* Page Contact */
+    main #contact{
+        width: 60%;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 999px){
+    main .organizar img{
+        width: 450px;
+    }
+}

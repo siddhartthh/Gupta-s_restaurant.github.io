@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="author" content="Gabriel Santana">
+        <link rel="shortcut icon" href="/lo1.jpg" type="image/x-icon">
+        <title>Restaurant</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>GUPTA'S</h1>
+
+            <input id="menu-hamburger" type="checkbox">
+            <label id="click" for="menu-hamburger">
+                <span class="hamburger"></span>
+            </label>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="index.html#reservation">Reservation</a></li>
+                    <li><a href="/menu.html">Menu</a></li>
+                    <li><a onclick="FuncMenu()" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <div class="banner banner-contact"></div>
+            <h1 class="title">Restaurant </h1>
+            <h2 class="sub-title">Contact</h2>
+
+            <form id="contact" action="" method="POST">
+                <input type="text" name="name" placeholder="First Name" required="required">
+                <input type="text" name="name" placeholder="Last Name" required="required">
+                <input type="email" name="_replyto" placeholder="Email *" required="required">
+                <input type="text" name="name" placeholder="Subject" required="required">
+                <textarea name="name" placeholder=" Leave us a message..." required="required" cols="50" rows="10"></textarea>
+                <input type="submit" required="required" placeholder="Submit" class="enviar">
+            </form>
+        </main>
+        
+        <footer>
+            <ul class="icons">
+                <a><i class="fab fa-instagram"></i></a>
+                <a><i class="fab fa-facebook"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                
+            </ul>
+
+            <section class="address">
+                <div class="all">
+                    <div>
+                        <h1>Address</h1>
+                        <p>300 Gopal Ganj</p>
+                        <p>Orai , 285001</p>
+                    </div>
+
+                    <div>
+                        <h1>Opening Hours</h1>
+                        <p>Mon - Fri:12pm - 10pm</p>
+                        <p>Sat - Sun:12pm - 10pm</p>
+                    </div>
+
+                    <div>
+                        <h1>Contact  Us</h1>
+                        <p>sid@gmail.com</p>
+                        <p id="si">123 456 6780</p>
+                    </div>
+                </div>
+
+                <hr>
+                <p id="copyright">©2021 Siddharth</p>
+                
+            </section>
+        </footer>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
